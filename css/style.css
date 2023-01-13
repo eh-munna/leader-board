@@ -1,12 +1,97 @@
 /* universal selector */
 
+:root {
+  --sch-color: #562eff;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
-/* body style */
+/* body style and customization*/
 body {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  background-color: #f3f1ff;
+}
+
+.container {
   max-width: 1240px;
   margin: 0 auto;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--sch-color);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* common designs */
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header and nav*/
+header,
+nav {
+  background-color: var(--sch-color);
+  height: 100px;
+}
+
+header nav {
+  justify-content: space-between;
+}
+
+.nav-logoPic {
+  height: 51px;
+  width: 40.424137115478516px;
+}
+
+/* Top-Player-Style */
+.top-player-wrap {
+  padding: 30px;
+}
+.top-player h1 {
+  color: var(--sch-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+.players {
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  padding-bottom: 30px;
+}
+
+.players > .player {
+  align-items: center;
+  gap: 10px;
+}
+
+.players > .player img {
+  width: 56px;
+  height: 56px;
 }
